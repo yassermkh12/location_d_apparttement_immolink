@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a{
+      text-decoration: none;
+      color: white;
+  }
+  li{
+      list-style-type: none;
+  }
+  
+  header{
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(-25deg, black,#444,black);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 100px;
+  }
+  .logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: #fefefe;
+  }
+  .hum{
+    display: none;
+  }
+  .nav-bar ul{
+    display: flex;
+  }
+  .nav-bar ul li a{
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+  }
+  .nav-bar ul li a:hover{
+    color:black;
+    background: #fefefe;
+  }
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url("bg_1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+h1{
+    text-transform : uppercase ;
+    font-size : 3rem;
+    color :white;
+    text-align: center;
+}
+
+#titre{
+    padding-top: 50px ;
+    padding-bottom: 50px;
+}
+.carte{
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-between;
+    width: 500px;
+    height: 270px;
+    margin: 0 auto;
+    background: linear-gradient(-25deg, black,#444,black);
+    border-radius: 15px;
+    color: white;
+    position:relative;
+    overflow: hidden;
+    text-shadow: 0 2px 0 black;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 10px 50px 10px black;
+}
+.carte::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 300px;
+    box-shadow: 0 0 50px 10px rgba(38, 38, 38, .95) inset;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-10%);
+}
+.carte_haut, .carte_bas{
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+.carte_haut svg{
+    transform: rotate(90deg);
+    width: 50px;
+    height: 50px;
+}
+.nom_carte{
+    font-size: 1.8rem;
+    z-index: 1;
+}
+.carte_centre{
+    z-index: 1;
+}
+.carte_centre img{
+    width: 80px;
+    border-radius: 15px;
+    padding-left: 2rem;
+}
+.carte_bas_gauche form input[type="email"], .carte_bas_gauche form input[type="password"]{
+    background: none;
+    border-style:solid;
+    border-top: none ;
+    border-left: none;
+    border-right: none ;
+    outline: none;
+    display: block;
+    margin: 0px auto;
+    padding: 5px;
+    width: 200px;
+    color: white;
+    transition: 00.24%;
+}
+.carte_bas_gauche form input[type="email"]:focus, .carte_bas_gauche form input[type="password"]:focus{
+    width: 200px;
+    border-bottom: 2px solid #9b59b6;
+    border-width: 3px;
+}
+.carte_bas_gauche form input[type="submit"]{
+    height: 30px;
+    width: 100%;
+    outline: none;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #ffe292, #9b59b6);
+}
+.carte_bas_gauche form input[type="submit"]:hover{
+    background: linear-gradient(-135deg, #ffe292, #9b59b6);
+}
