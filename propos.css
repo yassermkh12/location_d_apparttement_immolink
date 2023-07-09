@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a{
+      text-decoration: none;
+      color: white;
+  }
+  li{
+      list-style-type: none;
+  }
+  
+  header{
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(-25deg, black,#444,black);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 100px;
+  }
+  .logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: #fefefe;
+  }
+  .hum{
+    display: none;
+  }
+  .nav-bar ul{
+    display: flex;
+  }
+  .nav-bar ul li a{
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+  }
+  .nav-bar ul li a:hover{
+    color:black;
+    background: #fefefe;
+  }
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 110vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background: url("bg_1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    position: relative;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    background: linear-gradient(-25deg, black,#444,black);
+    width: 800px;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+  box-shadow: 0 10px 50px 10px black;
+}
+
+
+.circle{
+    width: 200px;
+    height: 200px;
+    background: url("house.jpg");
+    background-size: 100% 100%;
+    border-radius: 50%;
+    float: left;
+    shape-outside: circle();
+    margin: 40px; 
+}
